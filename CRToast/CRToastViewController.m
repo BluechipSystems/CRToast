@@ -55,6 +55,7 @@
     if (self.toastView) {
         CGSize notificationSize = CRNotificationViewSizeForOrientation(self.notification.notificationType, self.notification.preferredHeight, toInterfaceOrientation);
         self.toastView.frame = CGRectMake(0, 0, notificationSize.width, notificationSize.height);
+        self.view.frame = CGRectMake(0, 0, notificationSize.width, notificationSize.height);
     }
 }
 
